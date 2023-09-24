@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        h1 {
+            font-size: 55px;
+            color: green;
+            font-weight: 500;
+        }
+
+        p {
+            color: gray;
+        }
+
+        .paragraph-2 {
+            color: blue;
+            line-height: 1.8;
+        }
+
+        .text-div {
+            background-color: #e1e1e1;
+            padding-top: 25px;
+            padding-bottom: 25px;
+            padding-left: 25px;
+            padding-right: 25px;
+
+            padding: 25px;
+            padding: 25px 15px;
+            padding: 25px 15px 25px 15px;
+
+            margin: 100px 25px;
+
+            border: 2px solid #247d5e;
+
+            border-radius: 25px;
+        }
+
+        .login-btn {
+            text-decoration: none;
+            background-color: #247d5e;
+            color: #fff;
+            padding: 10px 30px;
+            border-radius: 10px;
+        }
+
+        .login-btn:hover {
+            background-color: #fff;
+            color: #247d5e;
+            border: 1px solid #247d5e;
+        }
+
+        .container {
+            display: flex;
+            max-width: 1000px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .column {
+            width: 50%;
+        }
+
+        .col-3 {
+            width: 33.3%;
+        }
+
+        .header-section {
+            background-image: url('image.jpg');
+            background-size: cover;
+            background-position: bottom left;
+            padding: 50px 0;
+        }
+
+        .welcome-text {
+            background-color: rgba(255,255,255,0.9);
+            padding: 15px 25px;
+        }
+
+        @media (max-width: 768px) { /* If screen size is smaller than 768px */
+
+            .container {
+                flex-direction: column;
+            }
+
+            .column {
+                width: 100%;
+            }
+
+            .column > img {
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header-section">
+        <div class="container">
+            <div class="column">
+                <div class="welcome-text">
+                    <h1>Welcome!</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Pellentesque ac vestibulum lorem. Nullam tincidunt velit non
+                        justo scelerisque sodales. Aliquam eget euismod tortor, ut
+                        hendrerit mi. Curabitur imperdiet, ligula id mattis ultricies,
+                        libero est tempus magna, at lobortis lacus dolor sit amet
+                        libero.</p>
+                </div>
+            </div>
+            <div class="column">
+                <img src="image2.png" alt="intro" />
+            </div>
+        </div>
+    </div>
+
+    <h1>CSS Styling</h1>
+
+    <h1>HEading 1 Duplicate</h1>
+
+    <p>This is a sample paragraph.</p>
+
+    <div class="text-div">
+        <p class="paragraph-2">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ac vestibulum
+            lorem. Nullam tincidunt velit non justo scelerisque sodales. Aliquam eget euismod tortor, ut hendrerit mi.
+            Curabitur imperdiet, ligula id mattis ultricies, libero est tempus magna, at lobortis lacus dolor sit amet
+            libero. Nullam a metus in ante auctor pulvinar tristique in massa. Aenean vitae sodales libero. Aenean eu
+            risus varius, lacinia arcu id, iaculis felis. Quisque eu orci a elit ornare condimentum. Phasellus eu dolor
+            non odio rhoncus gravida. Morbi sit amet egestas lectus. Fusce vitae interdum mauris. In at orci malesuada,
+            semper turpis ac, tincidunt nulla. Nulla dui sem, tristique ac dolor eu, sagittis hendrerit massa. Integer
+            facilisis tincidunt diam, vitae porttitor lectus porttitor sed.
+        </p>
+    </div>
+
+    <a href="#" class="login-btn">Login</a>
+
+    <div class="container">
+        <div class="column">
+            <h2>This is column 1</h2>
+        </div>
+        <div class="column">
+            <h2>This is column 2</h2>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="col-3">
+            Column 1
+        </div>
+        <div class="col-3">
+            Column 2
+        </div>
+        <div class="col-3">
+            Column 3
+        </div>
+    </div>
+</body>
+
+</html>

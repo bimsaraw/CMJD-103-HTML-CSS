@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>My First HTML App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body>
+    <div style="background-color: #ababab;">
+
+        <h1 style="color: red; font-size: 50px;">This is Heading 1</h1>
+
+        <h2 id="headingTwo">This is heading 2</h2>
+        <p>This is a <span style="color: blue; font-weight: bold;">sample paragraph</span></p>
+    </div>
+
+
+    <ol>
+        <li class="item-list">Item 1</li>
+        <li class="item-list">Item 2</li>
+        <li class="item-list">Item 3</li>
+    </ol>
+
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+    </ul>
+
+    <a href="https://www.google.lk">Click here to Go to Google</a>
+
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Address</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>01</td>
+                <td>Bimsara</td>
+                <td>Kottawa</td>
+            </tr>
+            <tr>
+                <td>01</td>
+                <td>Bimsara</td>
+                <td>Kottawa</td>
+            </tr>
+
+        </tbody>
+    </table>
+
+    <table border="1">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Item Name</th>
+                <th>Price</th>
+                <th>Qty</th>
+                <th>Total</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>001</td>
+                <td>Rice</td>
+                <td>240.00</td>
+                <td>2</td>
+                <td>480.00</td>
+            </tr>
+            <tr>
+                <td>002</td>
+                <td>Dhal</td>
+                <td>200.00</td>
+                <td>3</td>
+                <td>600.00</td>
+            </tr>
+            <tr>
+                <td colspan="4">Grand Total</td>
+                <td>1080.00</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <form>
+        <label>Username</label>
+        <input type="text" name="username" placeholder="Enter a unique
+            username" required value="samplevalue" readonly disabled />
+
+        <br />
+
+        <label>Password</label>
+        <input type="password" name="password" required />
+
+        <br>
+
+        <label>Email</label>
+        <input type="email" name="email" required />
+
+        <br />
+
+        <label>Address</label>
+        <textarea name="address" rows="3" cols="100">
+                Sample Value
+            </textarea>
+
+        <br />
+
+        <label>Country</label>
+        <select name="country" required>
+            <option value="LK">Sri Lanka</option>
+            <option value="IND">India</option>
+            <option value="USA" selected>USA</option>
+            <option value="AUS">Australia</option>
+        </select>
+
+        <br />
+        <label>Option 1</label>
+        <input type="radio" name="select_option" value="option_1" />
+
+        <label>Option 2</label>
+        <input type="radio" name="select_option" value="option_2" />
+
+        <br />
+
+        <label>I Agree to the terms and conditions</label>
+        <input type="checkbox" value="agree" name="terms" checked />
+
+        <br />
+        <label>Profile pic</label>
+        <input type="file" name="dp" />
+
+        <button type="submit">Save</button>
+    </form>
+
+    <img src="image.jpg" width="250" alt="" />
+
+</body>
+
+</html>
