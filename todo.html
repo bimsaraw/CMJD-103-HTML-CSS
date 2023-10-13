@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>To Do List</title>
+    </head>
+    <body>
+        <h1>To Do List</h1>
+
+        <form onsubmit="addToList(event)">
+            <label>Task</label>
+            <input type="text" id="task" />
+            <button type="submit">Add to List</button>
+        </form>
+
+        <div>
+            <ul id="taskList">
+
+            </ul>
+        </div>
+
+        <script>
+            const toDoList = [];
+
+            const addToList = (event) => {
+                event.preventDefault();
+
+                let task = document.getElementById('task').value;
+                toDoList.push(task);
+
+                document.getElementById('taskList').innerHTML = "";
+                
+                /* for(let i = 0; i < toDoList.length; i++) {
+                    document.getElementById('taskList').innerHTML += "<li>"+toDoList[i]+"</li>"
+                } */
+
+                toDoList.forEach((value) => {
+                    document.getElementById('taskList').innerHTML += "<li>"+value+"</li>";
+                });
+            }
+
+        </script>
+    </body>
+</html>
